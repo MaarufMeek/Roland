@@ -147,7 +147,7 @@ nav .nav-links li a:hover {
 
 .hero {
     position: relative;
-    background-image: url('/images/hero1.jpg');
+    background-image: url('../images/hero1.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
