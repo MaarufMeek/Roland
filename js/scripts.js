@@ -66,7 +66,7 @@
             id: 1,
             name: "iPhone 14 Pro Max",
             price: 999,
-            image: "/images/14pro.jpg",
+            image: "images/14pro.jpg",
             specs: {
                 display: "6.7-inch Super Retina XDR",
                 processor: "A16 Bionic",
@@ -78,7 +78,7 @@
             id: 2,
             name: "Samsung Galaxy S23 Ultra",
             price: 699,
-            image: "/images/s24.jpeg",
+            image: "images/s24.jpeg",
             specs: {
                 display: "6.8-inch Dynamic AMOLED 2X",
                 processor: "Snapdragon 8 Gen 2",
@@ -90,7 +90,7 @@
             id: 3,
             name: "Tecno Spark 30 Pro",
             price: 899,
-            image: "/images/Spark-30C.jpg",
+            image: "images/Spark-30C.jpg",
             specs: {
                 display: "6.78-inch AMOLED",
                 processor: "MediaTek Helio G99",
@@ -102,7 +102,7 @@
             id: 4,
             name: "Google Pixel 9 Pro",
             price: 899,
-            image: "/images/p9pro.png",
+            image: "images/p9pro.png",
             specs: {
                 display: "6.3-inch OLED",
                 processor: "Google Tensor G3",
