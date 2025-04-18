@@ -98,6 +98,7 @@
     margin-top: 5px;
 }
 
+
 .product-card .details {
     display: flex;
     flex-direction: column;
@@ -134,7 +135,7 @@
 }
 
 .product-card .details button:hover {
-    background-color: #087575; /* Vibrant Cyan on hover */
+    background-color: #9b8a2d; /* Vibrant Cyan on hover */
 }
 
 /* Cart Section */
@@ -281,15 +282,18 @@
     }
 
     .product-card {
-        height: 280px;
+        height: 500px;
+        width: 90%;
     }
 
+
     .product-card img {
-        height: 55%;
+        height: auto;
+        width: auto;
     }
 
     .product-card .details h3 {
-        font-size: 0.9rem;
+        font-size: 0.5rem;
     }
 
     .product-card .details p {
@@ -297,9 +301,9 @@
     }
 
     .product-card .details button {
-        width: 100px;
+        width: 150px;
         height: 32px;
-        font-size: 0.85rem;
+        font-size: 0.5rem;
     }
 
     /* Cart */

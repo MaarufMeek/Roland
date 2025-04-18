@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="details">
                         <h3>${phone.name}</h3>
                         <p>GHS ${phone.price.toLocaleString()}</p>
-                        <button class="order-btn" data-id="${phone.id}">Add to Cart</button>
+                        <button class="order-btn" data-id="${phone.id}">Add&nbsp;&nbsp;<i class="fa-solid fa-cart-plus"></i></button>
                 `;
                 productGrid.appendChild(card);
             });

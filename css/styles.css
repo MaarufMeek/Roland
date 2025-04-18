@@ -167,17 +167,17 @@ nav .nav-links li a:hover {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(26, 42, 68, 0.5);
+    background: rgba(26, 42, 68, 0.27);
     z-index: 2;
 }
 
 .hero h1 {
     font-size: 3rem;
-    color: #a6f0f1; /* Bright White for readability */
-    background-color: rgba(0, 9, 9, 0.3); /* Vibrant Cyan with transparency */
+    color: #ffffff;
+    background-color: rgba(0, 9, 9, 0.64);
     padding: 10px;
     border-radius: 10px;
-    z-index: 3;
+    z-index: 50000;
 }
 
 .sec {
@@ -364,6 +364,10 @@ nav .nav-links li a:hover {
     transform: translateY(0);
 }
 
+    .product-card img {
+        height: 60%   ;
+    }
+
     .overlay-content h3 {
         font-size: 0.9rem;
     }
@@ -374,6 +378,8 @@ nav .nav-links li a:hover {
 }
 
 @media (max-width: 480px) {
+
+
     .product-overlay {
         margin-bottom: 5px;
     }
