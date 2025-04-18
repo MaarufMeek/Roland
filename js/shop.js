@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "iPhone 14 Pro Max",
             price: 16230,
             brand: "apple",
-            image: "/images/14pro.jpg",
+            image: "images/14pro.jpg",
             link: "details.html?id=1"
         },
         {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Samsung Galaxy S23 Ultra",
             price: 11120,
             brand: "samsung",
-            image: "/images/s24.jpeg",
+            image: "images/s24.jpeg",
             link: "details.html?id=2"
         },
         {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Tecno Spark 30 Pro",
             price: 4000,
             brand: "tecno",
-            image: "/images/Spark-30C.jpg",
+            image: "images/Spark-30C.jpg",
             link: "details.html?id=3"
         },
         {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Google Pixel 9 Pro",
             price: 13000,
             brand: "google",
-            image: "/images/p9pro.png",
+            image: "images/p9pro.png",
             link: "details.html?id=4"
         },
         {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Samsung Galaxy S25 Ultra",
             price: 20300,
             brand: "samsung",
-            image: "/images/s25.jpg",
+            image: "images/s25.jpg",
             link: "details.html?id=5"
         },
         {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Tecno Camon 30",
             price: 4500,
             brand: "tecno",
-            image: "/images/camon30.jpg",
+            image: "images/camon30.jpg",
             link: "details.html?id=6"
         },
         {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Samsung Galaxy A55",
             price: 6800,
             brand: "samsung",
-            image: "/images/a55.jpg",
+            image: "images/a55.jpg",
             link: "details.html?id=7"
         },
         {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Infinix Hot 50",
             price: 4700,
             brand: "infinix",
-            image: "/images/hot50.png",
+            image: "images/hot50.png",
             link: "details.html?id=8"
         },
         {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Infinix Note 40",
             price: 3800,
             brand: "infinix",
-            image: "/images/inote40.jpg",
+            image: "images/inote40.jpg",
             link: "details.html?id=9"
         },
         {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "iPhone 13 mini",
             price: 9000,
             brand: "apple",
-            image: "/images/13mini.jpg",
+            image: "images/13mini.jpg",
             link: "details.html?id=10"
         },
         {
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "iPhone 16 mini",
             price: 17200,
             brand: "apple",
-            image: "/images/16mini.jpg",
+            image: "images/16mini.jpg",
             link: "details.html?id=11"
         }
     ];
