@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obour Phones - Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="sidebar" id="sidebar">
+                <nav class="sidebar-nav">
+                    <a href="index.html" title="Home"></a>
+                    <a href="shop.html" title="Shop"></a>
+                    <a href="#" title="Contact Us"></a>
+                </nav>
+            </div>
+            <div class="logo">OBOUR PHONEES</div>
+            <div class="menu" id="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <div class="overlay"></div>
+    <div class="msg-sent">
+        <h2>Message Sent!</h2>
+        <p>Thank you for contacting us!</p>
+        <p>Your message has been received.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section contact" data-aos="zoom-in" data-aos-duration="800">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@obourphones.com">info@obourphones.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+233 241447764</a></p>
+        </div>
+        <div class="footer-section location" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+            <h3>Our Location</h3>
+            <p>Sunyani Rd, Tanoso Mkt</p>
+            <p>Kumasi, Ghana</p>
+        </div>
+        <div class="footer-section social" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom" >
+        <p>© 2025 Obour Phones. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

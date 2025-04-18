@@ -1,0 +1,334 @@
+
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Checkout Section */
+.checkout {
+    padding: 15px; /* Reduced padding for mobile */
+    max-width: 1200px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.checkout h2 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.checkout-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.checkout-form,
+.cart-summary {
+    flex: 1;
+    min-width: 300px;
+    width: 100%; /* Full width on mobile */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form h3,
+.cart-summary h3 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 15px;
+    font-family: "Roboto Light", sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgba(7, 24, 65, 0.47);
+    border-radius: 6px;
+    background-color: #f1f5f9;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #dabd08;
+    box-shadow: 0 0 8px rgba(218, 189, 8, 0.3);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.place-order-btn {
+    color: #ffffff;
+    width: 100%;
+    max-width: 200px;
+    min-height: 45px; /* Ensure touch-friendly height */
+    border-radius: 5px;
+    background-color: #091e4f;
+    border: none;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.place-order-btn:hover {
+    background-color: #3c6c3c;
+}
+
+/* Cart Table */
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cart-table th,
+#cart-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    color: #030000;
+    word-wrap: break-word;
+}
+
+#cart-table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+#cart-table td {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+}
+
+
+#cart-table tr {
+
+}
+
+#cart-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Overlay and Order Success Popup */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.order-success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto; /* Flexible height for content */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.order-success.active {
+    display: flex;
+}
+
+.order-success h2 {
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.order-success .close-btn {
+    color: #ab0d0d;
+    margin-top: 5px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 2rem; /* Larger for touch */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.order-success .close-btn:hover {
+    color: #3c6c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .checkout {
+        padding: 10px;
+    }
+
+    .checkout h2 {
+        font-size: 2rem;
+    }
+
+    .checkout-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .checkout-form,
+    .cart-summary {
+        padding: 15px;
+        width: 100%; /* Full width */
+    }
+
+    .checkout-form h3,
+    .cart-summary h3 {
+        font-size: 1.6rem;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    .place-order-btn {
+        max-width: 180px;
+        min-height: 40px;
+        font-size: 1rem;
+    }
+
+    #cart-table th,
+    #cart-table td {
+        padding: 10px;
+        font-size: 0.95rem; /* Readable size */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .checkout {
+        padding: 8px;
+        margin: 10px auto;
+    }
+
+    .checkout h2 {
+        font-size: 1.8rem;
+    }
+
+    .checkout-form,
+    .cart-summary {
+        padding: 12px;
+        min-width: 0; /* Allow full flexibility */
+    }
+
+    .checkout-form h3,
+    .cart-summary h3 {
+        font-size: 1.4rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 7px;
+    }
+
+    .place-order-btn {
+        max-width: 160px;
+        min-height: 38px;
+        font-size: 0.9rem;
+    }
+
+    #cart-table th,
+    #cart-table td {
+        padding: 8px;
+        font-size: 0.85rem; /* Fixed typo from 0.2rem */
+    }
+
+    .order-success {
+        width: 90%;
+        max-width: 320px;
+        height: auto; /* Flexible height */
+        padding: 15px;
+    }
+
+    .order-success h2 {
+        font-size: 1.5rem;
+    }
+
+    .order-success p {
+        font-size: 0.9rem;
+    }
+
+    .close-btn {
+        font-size: 1.25rem; /* Larger for touch */
+        margin-top: 10px;
+    }
+}
